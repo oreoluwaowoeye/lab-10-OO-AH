@@ -5,6 +5,7 @@ calculator.py
 One function per operation, in order.
 """
 import math
+
 # First example
 def add(a, b):
     return a + b
@@ -16,10 +17,7 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Can not divide by 0.")
-    return b / a   # raise ZeroDivisionError if a == 0
+
 
 def logarithm(a, b):
     try:
@@ -28,3 +26,27 @@ def logarithm(a, b):
         print(f"ValueError: {e}")
 def exponent(a, b):
     a**b
+
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Can not divide by zero.")
+    return b / a
+
+def log(a, b):
+    try:
+        return log(a, b)# use math library + raise ValueError
+    except ValueError as e:
+        print(f"ValueError as {e}")
+
+def exp(a, b):
+    return a**b
+
