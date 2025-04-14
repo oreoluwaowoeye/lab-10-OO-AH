@@ -50,3 +50,9 @@ def log(a, b):
 def exp(a, b):
     return a**b
 
+def square_root(a):
+    return a ** 0.5
+
+def hypotenuse(a, b):
+    return math.sqrt(a**2+b**2)
+
