@@ -40,13 +40,13 @@ class TestCalculator(unittest.TestCase):
     def test_logarithm(self): # 3 assertions
         with self.assertRaises(ValueError):
             log(0,0)
-        pass
+
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
         with self.assertRaises(ValueError):
             log(1, -1)
-        pass
+
     ##########################
     
     # Partner 1
