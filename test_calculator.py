@@ -1,5 +1,6 @@
 import unittest
 from calculator import *
+import math
 
 class TestCalculator(unittest.TestCase):
     # Partner 2
@@ -12,10 +13,15 @@ class TestCalculator(unittest.TestCase):
 
     # Partner 1
     def test_multiply(self): # 3 assertions
-        pass
+        self.assertEqual(mul(3,2),6)
+        self.assertEqual(mul(-5,-9),45)
+        self.assertEqual(mul(4,4),16)
+
 
     def test_divide(self): # 3 assertions
-        pass
+        self.assertEqual(div(9,3),3)
+        self.assertEqual(div(4,2),2)
+        self.assertEqual(div(5,5),1)
     ##########################
 
     # Partner 2
@@ -35,13 +41,12 @@ class TestCalculator(unittest.TestCase):
     
     # Partner 1
     def test_log_invalid_argument(self): # 1 assertion
-        # call log function inside, example:
-        # with self.assertRaises(<INSERT_ERROR_TYPE>):
-        #     logarithm(0, 5)
+
+        with self.assertRaises(ValueError):
+            log(0,-2)
         pass
 
     def test_hypotenuse(self): # 3 assertions
-        pass
 
     def test_sqrt(self): # 3 assertions
         # Test for invalid argument, example:
