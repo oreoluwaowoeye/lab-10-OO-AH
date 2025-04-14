@@ -47,10 +47,9 @@ def div(a, b):
     return b / a
 
 def log(a, b):
-    try:
-        return log(a, b)# use math library + raise ValueError
-    except ValueError as e:
-        print(f"ValueError as {e}")
+    if b < 0:
+        raise ValueError("Base can not be negative.")
+    return math.log(a, b)# use math library + raise ValueError
 
 def exp(a, b):
     return a**b
@@ -60,9 +59,5 @@ def square_root(b):
         raise ValueError("Must be positive.")
     return math.sqrt(b)
 
-
-
-
 def hypotenuse(a, b):
     return math.sqrt(a**2+b**2)
-

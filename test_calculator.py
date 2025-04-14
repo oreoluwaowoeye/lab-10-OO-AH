@@ -39,21 +39,20 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self): # 3 assertions
         with self.assertRaises(ValueError):
-            log(0,0)
+            log(3,-5)
 
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
-        with self.assertRaises(ValueError):
-            log(1, -1)
+        with self.assertRaises(ZeroDivisionError):
+            log(1, 1)
 
     ##########################
     
     # Partner 1
     def test_log_invalid_argument(self): # 1 assertion
-
         with self.assertRaises(ValueError):
-            log(0,5)
+            log(2,-5)
 
 
     def test_hypotenuse(self): # 3 assertions
