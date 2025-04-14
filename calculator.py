@@ -55,10 +55,10 @@ def log(a, b):
 def exp(a, b):
     return a**b
 
-def square_root(a):
+def square_root(b):
     if a<0:
         raise ValueError("Must be positive.")
-    return math.sqrt(a)
+    return math.sqrt(b)
 
 
 
