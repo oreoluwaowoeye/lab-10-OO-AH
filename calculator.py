@@ -4,6 +4,10 @@ calculator.py
 
 One function per operation, in order.
 """
+#Partner 1: Oreoluwa Owoeye
+#Partner 2: Austin Henneberg
+#Link: https://github.com/oreoluwaowoeye/lab-10-OO-AH.git
+
 import math
 
 # First example
