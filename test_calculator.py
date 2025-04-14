@@ -4,14 +4,15 @@ from calculator import *
 #Partner 1: Oreoluwa Owoeye
 #Partner 2: Austin Henneberg
 
-
 class TestCalculator(unittest.TestCase):
     # Partner 2
-    def test_add(self): # 3 assertions
-        pass
+    def test_add(self):
+        self.assertEqual(add(5, 4), 9)# 3 assertions
+        self.assertNotEqual(add(2, 3), 6)
 
     def test_subtract(self): # 3 assertions
-        pass
+        self.assertEqual(sub(10, 1), 9)
+        self.assertNotEqual(sub(5, 3), 3)
     ##########################
 
     # Partner 1
@@ -32,13 +33,19 @@ class TestCalculator(unittest.TestCase):
         # call division function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
         pass
 
     def test_logarithm(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            log(0,0)
         pass
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
+        with self.assertRaises(ValueError):
+            log(1, -1)
         pass
     ##########################
     
