@@ -47,7 +47,7 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             log(0,5)
-        pass
+
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3,4),5)
