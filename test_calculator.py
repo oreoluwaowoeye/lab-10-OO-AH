@@ -1,8 +1,9 @@
+#Link: https://github.com/oreoluwaowoeye/lab-10-OO-AH.git
 import unittest
 from calculator import *
 #Partner 1: Oreoluwa Owoeye
 #Partner 2: Austin Henneberg
-#Link: https://github.com/oreoluwaowoeye/lab-10-OO-AH.git
+
 
 class TestCalculator(unittest.TestCase):
     # Partner 2

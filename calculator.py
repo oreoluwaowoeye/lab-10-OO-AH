@@ -1,3 +1,4 @@
+#Link: https://github.com/oreoluwaowoeye/lab-10-OO-AH.git
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -6,7 +7,7 @@ One function per operation, in order.
 """
 #Partner 1: Oreoluwa Owoeye
 #Partner 2: Austin Henneberg
-#Link: https://github.com/oreoluwaowoeye/lab-10-OO-AH.git
+
 
 import math
 
