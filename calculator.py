@@ -56,10 +56,10 @@ def exp(a, b):
     return a**b
 
 def square_root(a):
-    try:
-        return math.sqrt(a)
-    except ValueError as e:
-        print(f"ValueError as {e}")
+    if a<0:
+        raise ValueError("Must be positive.")
+    return math.sqrt(a)
+
 
 
 

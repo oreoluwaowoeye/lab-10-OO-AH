@@ -66,7 +66,8 @@ class TestCalculator(unittest.TestCase):
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #    square_root(NUM)
         # Test basic function
-        self.assertEqual(square_root(25),5)
+        with self.assertRaises(ValueError):
+            square_root(-1)
 
 
 # Do not touch this
