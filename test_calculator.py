@@ -68,6 +68,8 @@ class TestCalculator(unittest.TestCase):
         # Test basic function
         with self.assertRaises(ValueError):
             square_root(-1)
+            square_root(-5)
+            square_root(-4)
 
 
 # Do not touch this
