@@ -1,6 +1,6 @@
 import unittest
 from calculator import *
-import math
+
 
 class TestCalculator(unittest.TestCase):
     # Partner 2
@@ -53,6 +53,8 @@ class TestCalculator(unittest.TestCase):
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #    square_root(NUM)
         # Test basic function
+        with self.assertRaises(ValueError):
+            square_root(-25)
         pass
     ##########################
 
